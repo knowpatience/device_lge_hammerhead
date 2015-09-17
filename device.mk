@@ -241,6 +241,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.hammerhead
 
+# I/O Scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.io.scheduler=cfq
+
+# QCOM Perf lib
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
