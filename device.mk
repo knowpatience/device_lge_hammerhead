@@ -129,7 +129,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/lge/hammerhead/overlay
+    device/lge/hammerhead/overlay \
+    device/lge/hammerhead/overlay-gms \
+    device/lge/hammerhead/overlay-nexus
 
 PRODUCT_PACKAGES := \
     libwpa_client \
@@ -411,3 +413,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
+
+PRODUCT_PACKAGES += \
+	FakeNexusProvision \
