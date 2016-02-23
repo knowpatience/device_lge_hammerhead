@@ -424,4 +424,9 @@ $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
 
 PRODUCT_PACKAGES += \
-	FakeNexusProvision \
+    FakeNexusProvision \
+#    PerformanceControl \
+
+# Exclude live wallpapers
+TARGET_EXCLUDE_LIVEWALLPAPERS := true
+
