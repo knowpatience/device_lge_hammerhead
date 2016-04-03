@@ -427,6 +427,3 @@ PRODUCT_PACKAGES += \
     FakeNexusProvision \
 #    PerformanceControl \
 
-# Exclude live wallpapers
-TARGET_EXCLUDE_LIVEWALLPAPERS := true
-

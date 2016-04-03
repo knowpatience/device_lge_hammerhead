@@ -20,6 +20,9 @@
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/lge/hammerhead/apns-full-conf.xml:system/etc/apns-conf.xml
 
+# Exclude live wallpapers
+TARGET_EXCLUDE_LIVEWALLPAPERS := true
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
@@ -29,6 +32,12 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=hammerhead \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MMB29V/2554798:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MMB29V 2554798 release-keys" \
+    BUILD_ID=MMB29V
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
