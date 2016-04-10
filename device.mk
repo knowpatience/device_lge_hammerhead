@@ -423,7 +423,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
 
+# Extra Apps
 PRODUCT_PACKAGES += \
     FakeNexusProvision \
+    Terminal \
+    libjni_terminal \
+    toybox \
 #    PerformanceControl \
 
