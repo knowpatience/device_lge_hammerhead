@@ -408,5 +408,6 @@ PRODUCT_PACKAGES += \
     Terminal \
     libjni_terminal \
     toybox \
+    su \
 #    PerformanceControl \
 
