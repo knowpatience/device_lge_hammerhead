@@ -15,7 +15,7 @@
   <string name="config_webViewPackageName" translatable="false">com.google.android.webview</string>
 
      <!-- Google Backup Transport Service-->
-     <!--bool name="def_backup_enabled">true</bool>
-     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string-->
+     <bool name="def_backup_enabled">true</bool>
+     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
 </resources>
