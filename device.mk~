@@ -109,8 +109,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/lge/hammerhead/overlay \
-    device/lge/hammerhead/overlay-gms \
-    device/lge/hammerhead/overlay-nexus
 
 PRODUCT_PACKAGES := \
     libwpa_client \
@@ -407,7 +405,4 @@ PRODUCT_PACKAGES += \
     FakeNexusProvision \
     Terminal \
     libjni_terminal \
-    toybox \
-#    su \
-#    PerformanceControl \
 
