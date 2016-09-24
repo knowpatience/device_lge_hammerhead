@@ -9040,6 +9040,51 @@
       bearer="16"
   />
 
+  <apn carrier="Sprint LTE ota" 
+      mcc="310"
+      mnc="120"
+      apn="otasn"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6" bearer="14"
+  />
+  
+  <apn carrier="Sprint EHRPD ota"
+      mcc="310"
+      mnc="120"
+      apn="otasn"
+      type="fota"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer="13"
+  />
+
+  <apn carrier="Sprint LTE internet"
+      mcc="310"
+      mnc="120"
+      apn="n.ispsn"
+      type="default,mms,supl,hipri"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer="14"
+  />
+
+  <apn carrier="Sprint EHRPD internet"
+      mcc="310"
+      mnc="120"
+      apn="n.ispsn"
+      type="default,mms,supl,hipri"
+      mmsc="http://mms.sprintpcs.com"
+      mmsproxy="68.28.31.7"
+      mmsport="80"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      bearer="13"
+  />
+
   <apn carrier="My Multi Media"
       mcc="310"
       mnc="130"
